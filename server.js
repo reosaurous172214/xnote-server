@@ -9,7 +9,8 @@ import cron from 'node-cron';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
-// Middlewares
+
+//middlewares
 app.use(cors({
   origin: "https://xnote-ntkq.onrender.com",
   credentials: true
