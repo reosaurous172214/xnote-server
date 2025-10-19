@@ -9,16 +9,11 @@ import cron from 'node-cron';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-<<<<<<< HEAD
 // Middlewares
 app.use(cors({
   origin: "https://xnote-ntkq.onrender.com",
   credentials: true
 }));
-=======
-app.use(cors());
->>>>>>> 4ec443f (Add latest backend changes (Notes API, Trash, etc.))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
