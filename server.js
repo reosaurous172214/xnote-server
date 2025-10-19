@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(cors({
-  origin: "https://xnote-ntkq.onrender.com/",
+  origin: "https://xnote-ntkq.onrender.com",
   credentials: true
 }));
 app.use(express.json());
